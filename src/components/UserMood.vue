@@ -20,16 +20,22 @@ const selected = ref(null);
         <div class="sun"></div>
         <div class="sun"></div>
       </div>
-      <div  v-if="selected == 'romantic'" class="rains">
+      <div v-if="selected == 'romantic'" class="rains">
         <div class="rain"></div>
       </div>
       <div v-if="selected == 'gloomy'" class="cloud">
-      <svg class="smallcloud" viewBox='0 0 100 100'>
-    <path d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0" fill="white" />
-  </svg>
-  <svg class="smallcloud" viewBox='0 0 100 100'>
-    <path d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0" fill="white" />
-  </svg>
+        <svg class="smallcloud" viewBox="0 0 100 100">
+          <path
+            d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0"
+            fill="white"
+          />
+        </svg>
+        <svg class="smallcloud" viewBox="0 0 100 100">
+          <path
+            d="m 20 50 a 10 10 1 0 0 0 20 h 50 a 0.5 0.5 0 0 0 0 -25 a 0.5 0.5 0 0 0 -27 -3 a 0.5 0.5 0 0 0 -23 8 m 9 20 c 22 23 34 1 37 0 m 15 0"
+            fill="white"
+          />
+        </svg>
       </div>
     </div>
   </section>
@@ -37,22 +43,22 @@ const selected = ref(null);
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-
-//section class 
+//section class
 .cheerful {
   background: linear-gradient(to bottom, #b9dfff, #4ba0db, #004390);
 }
-.gloomy{
-    background: #2980b9;
+.gloomy {
+  background: #2980b9;
 }
- .romantic{
- background: linear-gradient(to bottom right, #131e35 ,#3f3a81);
+.romantic {
+  background: linear-gradient(to bottom right, #131e35, #3f3a81);
 }
-.angry{
-  background: red; 
+.angry {
+  background-image: url(https://i01.sozcucdn.com/wp-content/uploads/2020/06/23/iecrop/hortum-shuttr_16_9_1592921956.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 ////
-
 
 section {
   display: flex;
@@ -66,38 +72,37 @@ section {
     width: 100%;
     height: 500px;
   }
-  select{
+  select {
     height: 35px;
     border-radius: 4px;
   }
-  .rains{
+  .rains {
     width: 100%;
     height: 500px;
   }
-  .cloud{
+  .cloud {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 500px;
-    svg{
+    svg {
       width: 100%;
-      height: 100%;;
+      height: 100%;
     }
   }
 }
 
-
 //  Romantic = Rainss
 
-.rain{
+.rain {
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-image: url("https://cdn.discordapp.com/attachments/744182992037216260/990016273008177242/rain1.png"),
-  url("https://cdn.discordapp.com/attachments/744182992037216260/990016273217900584/rain2.png"),
-  url("https://cdn.discordapp.com/attachments/744182992037216260/990016273456988240/rain3.png");
-  
-  animation: snow 1.5s linear  infinite ;
+    url("https://cdn.discordapp.com/attachments/744182992037216260/990016273217900584/rain2.png"),
+    url("https://cdn.discordapp.com/attachments/744182992037216260/990016273456988240/rain3.png");
+
+  animation: snow 1.5s linear infinite;
 }
 
 @keyframes snow {
@@ -110,10 +115,7 @@ section {
 }
 //
 
-
-
 //CHERFUUL - SUNNY
-
 
 .sun {
   display: block;
@@ -133,7 +135,7 @@ section {
 
 ///
 
-//responsive 
+//responsive
 @media only screen and (max-width: 600px) {
   .sunnys {
     flex-direction: column !important;
