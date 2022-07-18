@@ -43,7 +43,7 @@ const selected = ref(null);
 .angry {
   background-image: url(https://i01.sozcucdn.com/wp-content/uploads/2020/06/23/iecrop/hortum-shuttr_16_9_1592921956.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 ////
 
