@@ -1,10 +1,10 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <UserMood />
 </template>
 
 <script setup lang="ts">
 
-import HelloWorld from './components/HelloWorld.vue';
+import UserMood from '@/components/UserMood.vue';
 
 </script>
 
