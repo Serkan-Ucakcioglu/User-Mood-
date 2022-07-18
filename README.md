@@ -1,24 +1,14 @@
-# user-mood
+### Beginning
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/98692987/179499527-ac13d285-fd07-42bf-94a8-f8060f01d641.png">
 
-## Project setup
-```
-npm install
-```
+### Cheerful
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/98692987/179499573-0c62d955-b945-4b59-8307-d39fe7698092.png">
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Romantic
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/98692987/179499650-c0699a09-0d07-4dd2-9b0d-38c28c609e3a.png">
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Gloomy
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/98692987/179499721-b597f080-176f-4eda-bd74-749d2b8e740d.png">
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Angry 
+<img width="900" alt="image" src="https://user-images.githubusercontent.com/98692987/179499786-9e2b01df-b637-4356-ba35-7f3c144fd6e0.png">
