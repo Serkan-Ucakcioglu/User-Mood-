@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// İMPORT
 import { ref } from "vue";
 import SunnyDay from "./Weather/SunnyDay.vue";
 import RomanticDay from "./Weather/RomanticDay.vue";
@@ -9,17 +10,24 @@ const selected = ref(null);
 
 <template>
   <section :class="selected">
+    <!-- Container -->
     <div class="container">
-      <h1 v-if="selected == null ">How are you today ? </h1>
+      <!-- Head Title  -->
+      <h1 v-if="selected == null">How are you today ?</h1>
+      <!-- Select  -->
       <select name="sec" v-model="selected">
+        <!-- Option Category -->
         <option disabled value="">Please select one</option>
         <option value="cheerful">Cheerful</option>
         <option value="romantic">Romantic</option>
         <option value="gloomy">Gloomy</option>
         <option value="angry">Angry</option>
+        <!--  -->
       </select>
+      <!--  -->
 
       <div class="weather">
+        <!-- Components  -->
         <SunnyDay v-if="selected == 'cheerful'" />
         <RomanticDay v-if="selected == 'romantic'" />
         <GloomyDay v-if="selected == 'gloomy'" />
@@ -45,7 +53,7 @@ const selected = ref(null);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-////
+//// /
 
 section {
   display: flex;
@@ -57,9 +65,8 @@ section {
     border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 }
 </style>

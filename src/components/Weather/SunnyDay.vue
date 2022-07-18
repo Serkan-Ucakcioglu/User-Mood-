@@ -1,13 +1,16 @@
 <script setup lang="ts"></script>
 
 <template>
+  <!-- sunny group -->
   <div class="sunnys">
+    <!-- Sun -->
     <div class="sun"></div>
     <div class="sun"></div>
     <div class="sun"></div>
   </div>
 </template>
 <style lang="scss" scoped>
+//sunny
 .sunnys {
   display: flex;
   justify-content: center;
@@ -25,9 +28,9 @@
     );
     border-radius: 50%;
     box-shadow: 0 0 0.5em rgba(255, 237, 175, 1);
-    -webkit-animation: rays 10s infinite;
-    -moz-animation: rays 10s infinite;
-    animation: rays 10s infinite;
+    -webkit-animation: rays 3s infinite;
+    -moz-animation: rays 3s infinite;
+    animation: rays 1s infinite;
   }
 }
 
